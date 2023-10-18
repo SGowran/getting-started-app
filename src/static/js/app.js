@@ -18,6 +18,11 @@ function App() {
 
 function ShareBar(){
     console.log("This works");
+    return (
+        <div>
+          Hello World
+        </div>
+      );
 }
 
 function TodoListCard() {
