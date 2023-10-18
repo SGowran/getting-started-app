@@ -7,8 +7,17 @@ function App() {
                     <TodoListCard />
                 </Col>
             </Row>
+            <Row>
+                <Col md={{ offset: 3, span: 6 }}>
+                    <ShareBar />
+                </Col>
+            </Row>
         </Container>
     );
+}
+
+function ShareBar(){
+    console.log("This works")
 }
 
 function TodoListCard() {
