@@ -17,7 +17,7 @@ function App() {
 }
 
 function ShareBar(){
-    console.log("This works")
+    console.log("This works");
 }
 
 function TodoListCard() {
