@@ -4,6 +4,11 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <h1>Pixie Dream Girl Weekly Tasks</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -17,13 +22,24 @@ function App() {
 }
 
 function ShareBar(){
-    console.log("This works");
+    const share = () => {
+        console.log("Try to share");
+        navigator.share({
+            title: "Share List",
+            text: "Share List",
+            url: "http://localhost:3000"
+        });
+    };
+
+    console.log("ShareBar is called");
     return (
-        <div>
-          Hello World
-        </div>
-      );
-}
+        <button class="button"
+            onClick={share}
+        ><span>Share List</span>    
+        <i class="fa fa-paper-plane-o"></i>
+        </button>
+    );
+};
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
@@ -67,7 +83,7 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                <p className="text-center">You have no todo items yet! Add one above!</p>
+                <p className="text-center">You have no todo items yet! You need to get out of your comfort zone and explore the world. Trust me, you will love it!</p>
             )}
             {items.map(item => (
                 <ItemDisplay
