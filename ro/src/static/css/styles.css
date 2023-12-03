@@ -1,5 +1,5 @@
 body {
-    background: #000 center/cover url(assests/Untitleddesign.png);
+    background: #000 center/cover url(assests/background2.png);
     height: 100%;
     margin: 100px;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 
 .h1 {
     font-family: "Lucida Console", "Courier New", monospace;
-  }
+}
 
 .item.completed {
     text-decoration: line-through;
@@ -57,14 +57,14 @@ button:focus {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #E8A0BF}
-  
-  .button:active {
+}
+
+.button:hover {
+    background-color: #E8A0BF
+}
+
+.button:active {
     background-color: #E8A0BF;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
-
-  
+}
