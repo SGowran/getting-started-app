@@ -1,0 +1,70 @@
+body {
+    background: #000 center/cover url(assests/Untitleddesign.png);
+    height: 100%;
+    margin: 100px;
+    background-attachment: fixed;
+    font-family: 'Lato';
+}
+
+.item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 1em #aaa;
+}
+
+.h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+.item.completed {
+    text-decoration: line-through;
+}
+
+.toggles {
+    color: #86A789;
+}
+
+.name {
+    padding-top: 3px;
+}
+
+.remove {
+    padding-left: 0;
+}
+
+button:focus {
+    border: 1px solid #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #BA90C6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #E8A0BF}
+  
+  .button:active {
+    background-color: #E8A0BF;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
