@@ -22,7 +22,8 @@ body {
 
 .h1 {
     font-family: "Lucida Console", "Courier New", monospace;
-    color: #fff;
+    background-color: black;
+    color: white;
 }
 
 .item.completed {
